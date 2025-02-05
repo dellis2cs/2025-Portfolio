@@ -18,9 +18,11 @@ const Hero = () => {
           </p>
           <div className="flex items-center justify-center  space-x-4 transition-all hover:scale-110  ease-in-out  duration-[.25s] ">
             <motion.a
-              href="#projects"
+              href="/dellisResume.pdf" // Updated to point to your resume PDF
+              target="_blank" // Opens the link in a new tab
+              rel="noopener noreferrer" // Security best practice for external links
               whileTap={{ scale: 0.95 }}
-              className="border border-black px-8 py-3 text-sm tracking-wider hover:bg-black hover:text-white transition-all hover:scale-110  ease-in-out  duration-[.25s]"
+              className="border border-black px-8 py-3 text-sm tracking-wider hover:bg-black hover:text-white transition-all hover:scale-110 ease-in-out duration-[.25s]"
             >
               RESUME
             </motion.a>
