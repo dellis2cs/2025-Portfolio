@@ -22,13 +22,12 @@ const About = () => {
             <p className="text-gray-600">
               Computer Science student at the University of Oregon, graduating
               in May 2026. Passionate about leveraging technology to solve
-              real-world problems, with a focus on Machine Learning and Web
+              real-world problems, with a focus on Machine Learning and Back End
               Development.
             </p>
             <p className="text-gray-600">
-              Currently working as a Machine Learning Research Intern at Grok
-              AI, gaining valuable experience in AI-driven solutions for product
-              strategies.
+              Currently working as an AI Research Intern at Grok AI, gaining
+              valuable experience in AI-driven solutions for product strategies.
             </p>
           </div>
         </motion.div>

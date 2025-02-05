@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 bg-white px-4 md:px-20">
+    <section id="" className="py-20 bg-white px-4 md:px-20">
       <div className="max-w-6xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -21,7 +21,7 @@ const Experience = () => {
           <div className="grid md:grid-cols-[200px_1fr] gap-8">
             <div className="text-gray-400">Apr 2024 – Present</div>
             <div>
-              <h3 className="text-xl mb-4">Machine Learning Research Intern</h3>
+              <h3 className="text-xl mb-4">AI Research Intern</h3>
               <p className="text-gray-600 mb-4">Grok AI – San Francisco, CA</p>
               <ul className="list-disc list-inside text-gray-600 space-y-2">
                 <li>
@@ -30,6 +30,25 @@ const Experience = () => {
                 <li>
                   Working under the mentorship of the Head of Enterprise Product
                   Management at You.com
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="grid md:grid-cols-[200px_1fr] gap-8">
+            <div className="text-gray-400">Jan 2025</div>
+            <div>
+              <h3 className="text-xl mb-4">Quack Hacks Hackathon</h3>
+              <p className="text-gray-600 mb-4">
+                Univserity of Oregon- Eugene, OR
+              </p>
+              <ul className="list-disc list-inside text-gray-600 space-y-2">
+                <li>
+                  Competed in the first ever University of Oregon Hackathon
+                </li>
+                <li>
+                  Built an AI study tool with a team of 4 which takes in notes
+                  and the ML model creates an index card out of the notes you
+                  submitted for study purposes
                 </li>
               </ul>
             </div>
@@ -45,7 +64,10 @@ const Experience = () => {
                   Coursework: Computer Organization, Data Structures,
                   Algorithms, Unix and C++
                 </li>
-                <li>Awards: Dean's List, Mind's Move Mountains Scholarship</li>
+                <li>
+                  Awards: Dean&apos;s List, Mind&apos;s Move Mountains
+                  Scholarship
+                </li>
               </ul>
             </div>
           </div>

@@ -5,25 +5,28 @@ import { motion } from "framer-motion";
 const Projects = () => {
   const projects = [
     {
-      title: "ML Sentiment Analysis",
+      title: "Indexify",
+      description:
+        "A full-stack platform that leverages Machine Learning to automatically convert study notes into concise, user-friendly index cards.",
+      tools: "Express.js, React, MongoDB, PyTorch",
+      link: "https://github.com/dellis2cs/Indexify/tree/main",
+      img: "Indexify.png",
+    },
+    {
+      title: "Product Review Sentiment Analysis",
       description:
         "Developed a machine Learning model to classify user product reviews as positive or negative.",
-      tools: "Python, React, Flask",
-      link: "#",
+      tools: "Python, React, Flask, Scikit-learn",
+      link: "https://github.com/dellis2cs/aiSentimentAnalysis",
+      img: "Sentiment.png",
     },
     {
-      title: "DevNetLink",
+      title: "Orbit",
       description:
-        "Built a full stack social media app during HackUO, a University of Oregon hackathon.",
-      tools: "Express.js, React, MongoDB",
-      link: "#",
-    },
-    {
-      title: "Ecommerce Store",
-      description:
-        "Designed and developed an ecommerce storefront to enhance online shopping experiences.",
-      tools: "React, JavaScript, fake-store API",
-      link: "#",
+        "Currently designing and developing a full-stack interview preparation platform to track leetcode progression, manage contacts and internship applications, and a full markdown text editor, as well as other features to come. ",
+      tools: "Express.js, React, JavaScript, PostgreSQL",
+      link: "https://github.com/dellis2cs/Orbit",
+      img: "Orbit.png",
     },
   ];
 
@@ -40,26 +43,39 @@ const Projects = () => {
         </motion.h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <motion.div
+            <a
+              href={project.link}
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group"
+              target="_blank"
+              className="hover:scale-110 transition-all ease-in-out duration-[.3s]"
             >
-              <div className="aspect-video bg-gray-100 mb-4 overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center text-gray-300 text-9xl font-bold">
-                  {index + 1}
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="group"
+              >
+                <div className="aspect-video bg-gray-100 mb-4 overflow-hidden border border-neutral-200">
+                  <div className="w-full h-full flex items-center justify-center">
+                    {project.img && (
+                      <img
+                        src={project.img}
+                        alt={project.title}
+                        className="w-full h-full object-fill"
+                      />
+                    )}
+                  </div>
                 </div>
-              </div>
-              <h3 className="text-xl mb-2 group-hover:text-gray-600 transition-colors">
-                {project.title}
-              </h3>
-              <p className="text-gray-600 text-sm mb-4">
-                {project.description}
-              </p>
-              <p className="text-gray-400 text-sm">{project.tools}</p>
-            </motion.div>
+                <h3 className="text-xl mb-2 group-hover:text-gray-600 transition-colors ">
+                  {project.title}
+                </h3>
+                <p className="text-gray-600 text-sm mb-4">
+                  {project.description}
+                </p>
+                <p className="text-gray-400 text-sm">{project.tools}</p>
+              </motion.div>
+            </a>
           ))}
         </div>
       </div>

@@ -17,12 +17,13 @@ const Skills = () => {
         "Express",
         "PostgreSQL",
         "REST APIs",
-        "TailwindCSS",
+        "PyTorch",
+        "MongoDB",
       ],
     },
     {
       category: "Other",
-      items: ["Git/Github", "Visual Studio Code", "MongoDB", "Spline"],
+      items: ["Git/Github", "Visual Studio Code", "Spline", "TailwindCSS"],
     },
   ];
 

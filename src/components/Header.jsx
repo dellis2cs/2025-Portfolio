@@ -17,13 +17,13 @@ const Header = () => {
         </a>
         <nav className="hidden md:flex space-x-12">
           <a
-            href="#about"
+            href="#"
             className="tracking-widest text-sm hover:text-gray-600 transition"
           >
             HOME
           </a>
           <a
-            href="#experience"
+            href="#about"
             className="tracking-widest text-sm hover:text-gray-600 transition"
           >
             ABOUT
