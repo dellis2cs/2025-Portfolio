@@ -13,12 +13,12 @@ const Projects = () => {
       img: "Indexify.png",
     },
     {
-      title: "Product Review Sentiment Analysis",
+      title: "Signa",
       description:
-        "Developed a machine Learning model to classify user product reviews as positive or negative.",
+        "Developed a full stack machine Learning app to classify the entire sign language alphabet in realtime.",
       tools: "Python, React, Flask, Scikit-learn",
-      link: "https://github.com/dellis2cs/aiSentimentAnalysis",
-      img: "Sentiment.png",
+      link: "https://github.com/dellis2cs/sign.io",
+      img: "Signa.png",
     },
     {
       title: "Orbit",
