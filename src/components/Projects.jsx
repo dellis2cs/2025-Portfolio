@@ -21,12 +21,12 @@ const Projects = () => {
       img: "Signa.png",
     },
     {
-      title: "Orbit",
+      title: "FitQuest",
       description:
-        "Currently designing and developing a full-stack interview preparation platform to track leetcode progression, manage contacts and internship applications, and a full markdown text editor, as well as other features to come. ",
-      tools: "Express.js, React, JavaScript, PostgreSQL",
-      link: "https://github.com/dellis2cs/Orbit",
-      img: "Orbit.png",
+        "Currently building a mobile competetive fitness app for ducks complete with a friends and guilds system, rpg like leveling system, and workout logging. ",
+      tools: "React Native, TypeScript, Node.js, Express, Supabase",
+      link: "https://github.com/dellis2cs/FitQuest",
+      img: "FitQuest.png",
     },
   ];
 

@@ -6,12 +6,22 @@ const Skills = () => {
   const skills = [
     {
       category: "Languages",
-      items: ["C++", "C", "JavaScript", "Python", "C#", "SQL", "CSS"],
+      items: [
+        "C++",
+        "C",
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "C#",
+        "SQL",
+        "CSS",
+      ],
     },
     {
       category: "Technologies",
       items: [
         "React",
+        "React Native",
         "Flask",
         "NodeJS",
         "Express",
